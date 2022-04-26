@@ -3,16 +3,16 @@
 #04/26/2022
 
 
-import pick_word
-import display
+import words.pick_word
+import display.display
 
 # Setup
 done = False
 print ( "=> ", end="" )
 cmd = input()
 cmd_list = cmd.split()
-art = display.Display()
-ww = pick_word.Word()
+art = display.display.Display()
+ww = words.pick_word.Word()
 ww.pickSecretWord()
 
 while not done :
